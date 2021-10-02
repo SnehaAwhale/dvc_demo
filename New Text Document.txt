@@ -1,0 +1,24 @@
+import os 
+
+dirs =[
+    os.path("data"/"raw"),
+    os.path("data"/"processed"),
+    os.path("notebooks"),
+    "saved_models",
+    "src"
+]
+for dir_ in dirs:
+    os.makedirs(dir_ , exists_ok= True)
+    with open(os.path.join(dir_, ".gitkeep"),'w') as f:
+	pass
+
+file_= [
+     "dvc.yaml",
+     "params.yaml",
+     ".gitignore",
+     os.path.join("src","__init__.py")
+
+]
+
+for file in files:
+     with open(file_,)
